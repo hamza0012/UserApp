@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register_Complaint"
+    android:padding="70dp">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rc1"
+        android:background="@drawable/background_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        >
+
+        <EditText
+            android:id="@+id/rce1"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:overlapAnchor="false"
+            android:hint="Enter Your User Name"
+            android:backgroundTint="#D5D4D4"
+            android:layout_marginLeft="12dp"
+            android:background="@android:color/transparent">
+
+        </EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rc2"
+        android:layout_below="@id/rc1"
+        android:background="@drawable/background_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/rcs2"
+            android:layout_width="match_parent"
+            android:overlapAnchor="false"
+            android:layout_height="70dp"
+            android:spinnerMode="dropdown">
+
+        </androidx.appcompat.widget.AppCompatSpinner>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/secondbox"
+        android:background="@drawable/background_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/rc2">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/secondspin"
+            android:layout_width="match_parent"
+            android:overlapAnchor="false"
+            android:layout_height="70dp"
+            android:spinnerMode="dropdown">
+
+        </androidx.appcompat.widget.AppCompatSpinner>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lastone"
+        android:layout_below="@+id/secondbox"
+        android:background="@drawable/background_border"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+
+        <EditText
+            android:id="@+id/rce2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overlapAnchor="false"
+            android:hint="Enter your descrition here"
+            android:backgroundTint="#D5D4D4"
+            android:layout_marginLeft="12dp"
+            android:background="@android:color/transparent">
+
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/lastone"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        >
+        <TextView
+            android:id="@+id/registerCom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Register"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:background="@drawable/conitnue_button"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center">
+
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

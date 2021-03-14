@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Code_Verification">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <TextView
+            android:id="@+id/firstheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/ttn_norms_bold"
+            android:text="Enter code"
+            android:layout_marginLeft="19dp"
+            android:textColor="#000"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/secondheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_below="@+id/firstheading"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/simple_norm_tt"
+            android:text="An SMS code was sent to "
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/pnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_below="@+id/secondheading"
+            android:layout_marginTop="2dp"
+            android:textColor="#000"
+            android:fontFamily="@font/ttn_norms_bold"
+            android:text="+923057977858 "
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/edit_pnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pnumber"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="19dp"
+            android:textColor="#1B6DAA"
+            android:fontFamily="@font/simple_norm_tt"
+            android:text="Edit Phone Number"
+            android:textSize="16sp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/background_border"
+            android:layout_below="@+id/edit_pnumber"
+            >
+
+
+        <EditText
+            android:id="@+id/otp_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="19dp"
+            android:ems="10"
+            android:hint="Enter Code"
+            android:inputType="phone"
+            android:textSize="16dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:background="@android:color/transparent"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/codeverification"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        >
+        <TextView
+            android:id="@+id/verifycode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="continue"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:background="@drawable/conitnue_button"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:onClick="verify_code"
+            >
+
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

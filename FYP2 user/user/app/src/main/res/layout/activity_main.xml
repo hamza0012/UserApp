@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/firsthead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your Number"
+        android:fontFamily="@font/ttn_norms_bold"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        />
+    <TextView
+        android:id="@+id/secondhead"
+        android:layout_below="@+id/firsthead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We will send a code to verify your mobile number"
+        android:fontFamily="@font/simple_norm_tt"
+        android:textColor="#A3A3A3"
+        android:textSize="18dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/numbersection"
+        android:layout_below="@+id/secondhead"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/background_border"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:onClick="openDialog">
+       <TextView
+           android:id="@+id/countname"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="PAK"
+           android:textColor="#000"
+           android:textSize="19dp"
+           android:layout_marginLeft="12dp"
+           >
+       </TextView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/down_arrow"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="4dp">
+        </androidx.appcompat.widget.AppCompatImageView>
+
+
+        <TextView
+            android:id="@+id/countcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+92"
+            android:textSize="19dp"
+            android:textColor="#000"
+            android:layout_marginLeft="3dp"
+            >
+        </TextView>
+
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/phnumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:hint="XXXXXXXXXX"
+            android:layout_marginLeft="19dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:background="@android:color/transparent">
+        </EditText>
+    </LinearLayout>
+
+
+<RelativeLayout
+    android:id="@+id/contnuetoverify"
+    android:layout_width="match_parent"
+    android:layout_height="63dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="40dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginLeft="25dp"
+    >
+    <TextView
+        android:id="@+id/continuebutton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="continue"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:background="@drawable/conitnue_button"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:onClick="continue_button"
+        >
+
+    </TextView>
+</RelativeLayout>
+
+
+
+</RelativeLayout>

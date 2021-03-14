@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Edit_Profile"
+    android:padding="31dp">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/e1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Info"
+            android:textSize="25dp"
+            android:fontFamily="@font/ttn_norms_bold"
+            android:textColor="#000"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/e11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e1"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="12dp"
+            android:text="username"
+            android:textSize="15dp"
+            android:textColor="#000">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/e12"
+            android:layout_width="match_parent"
+            android:layout_below="@id/e11"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gradient_start_color"
+            android:textSize="15dp"
+            >
+
+        </EditText>
+
+
+
+
+        <TextView
+            android:id="@+id/e13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e12"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="12dp"
+            android:text="Password"
+            android:textSize="15dp"
+            android:textColor="#000">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/e_14"
+            android:layout_width="match_parent"
+            android:layout_below="@id/e13"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gradient_start_color"
+            android:textSize="15dp"
+            >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/e15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e_14"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="12dp"
+            android:text="Confirm Password"
+            android:textSize="15dp"
+            android:textColor="#000">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/e16"
+            android:layout_width="match_parent"
+            android:layout_below="@id/e15"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gradient_start_color"
+            android:textSize="15dp"
+            >
+
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/e17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/e16"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="12dp"
+            android:text="Phone Number"
+            android:textSize="15dp"
+            android:textColor="#000">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/e18"
+            android:layout_width="match_parent"
+            android:layout_below="@id/e17"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gradient_start_color"
+            android:textSize="15dp"
+            >
+
+        </EditText>
+
+        <RelativeLayout
+            android:id="@+id/update"
+            android:layout_below="@+id/e18"
+            android:layout_width="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/background_border">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:text="Update"
+                android:fontFamily="@font/vistolsans_black"
+                android:layout_centerHorizontal="true"
+                android:textSize="26dp"
+                android:textColor="#000"
+                android:layout_marginBottom="19dp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main"
+        android:layout_marginBottom="40dp"
+        android:text="Choose Category"
+        android:fontFamily="@font/ttn_norms_bold"
+        android:textColor="#000"
+        android:textSize="27dp"
+        android:gravity="center">
+
+    </TextView>
+<LinearLayout
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:layout_centerVertical="true"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/baby"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="12dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/baby">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/baby"
+    android:text="Baby Sitting"
+    android:textSize="19dp"
+    android:textColor="#000"
+    android:gravity="center_horizontal"
+    ></TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/plumberX"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="24dp"
+        app:cardCornerRadius="12dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/plumber">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plumberX"
+        android:text="Plumber"
+        android:textSize="19dp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        ></TextView>
+
+</RelativeLayout>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="11dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cheff"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="12dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cheff">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cheff"
+        android:text="Kitchening"
+        android:textSize="19dp"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+</RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/iron"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="24dp"
+            app:cardCornerRadius="12dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/iron">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iron"
+                android:text="Ironing"
+                android:textSize="19dp"
+                android:textColor="#000"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                ></TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="11dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Cleaning"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="12dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cleaning">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Cleaning"
+                android:text="Cleaning"
+                android:textSize="19dp"
+                android:textColor="#000"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                ></TextView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shifting"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="24dp"
+            app:cardCornerRadius="12dp">
+
+            <ImageView
+                
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/shifting">
+
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shifting"
+                android:text="Home Shifting"
+                android:textSize="19dp"
+                android:textColor="#000"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                ></TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+</RelativeLayout>

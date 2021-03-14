@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info_Screen_From_Category"
+    android:padding="70dp">
+
+
+    <RelativeLayout
+        android:id="@+id/vfirstbox"
+        android:background="@drawable/background_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        >
+
+        <EditText
+            android:id="@+id/vfirstspin"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:overlapAnchor="false"
+            android:hint="Select Your Location"
+            android:backgroundTint="#D5D4D4"
+            android:layout_marginLeft="12dp"
+            android:background="@android:color/transparent">
+
+        </EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/firstbox"
+        android:layout_below="@id/vfirstbox"
+        android:background="@drawable/background_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/firstspin"
+            android:layout_width="match_parent"
+            android:overlapAnchor="false"
+            android:layout_height="70dp"
+            android:spinnerMode="dropdown">
+
+        </androidx.appcompat.widget.AppCompatSpinner>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/secondbox"
+        android:background="@drawable/background_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/firstbox">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/secondspin"
+            android:layout_width="match_parent"
+            android:overlapAnchor="false"
+            android:layout_height="70dp"
+            android:spinnerMode="dropdown">
+
+        </androidx.appcompat.widget.AppCompatSpinner>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/secondbox"
+        android:background="@drawable/background_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/thirdspin"
+            android:layout_width="match_parent"
+            android:overlapAnchor="false"
+            android:layout_height="70dp"
+            android:spinnerMode="dropdown"
+            android:hint="Price:"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="40dp"
+        >
+        <TextView
+            android:id="@+id/verifycode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Next"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:background="@drawable/conitnue_button"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center">
+
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

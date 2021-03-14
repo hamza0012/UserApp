@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentMethod"
+    android:padding="12dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:cardCornerRadius="7dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="19dp">
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available credit"
+            android:textSize="26dp"
+            android:textColor="#000"
+            android:fontFamily="@font/simple_norm_tt">
+
+        </TextView>
+        <LinearLayout
+            android:layout_below="@id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RS."
+            android:textSize="32dp"
+            android:textColor="#000"
+            android:fontFamily="@font/ttn_norms_bold">
+
+        </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="32dp"
+                android:textColor="#000"
+                android:layout_marginLeft="12dp">
+
+            </TextView>
+        </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/addcredit"
+        android:layout_below="@+id/cc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/background_border">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="Add credit from Jazzcash"
+            android:fontFamily="@font/simple_norm_tt"
+            android:layout_centerHorizontal="true"
+            android:textSize="26dp"
+            android:textColor="#000"
+            android:layout_marginBottom="19dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_Account">
+
+
+    <RelativeLayout
+        android:id="@+id/imm"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/logindesign">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Sign UP"
+            android:textColor="#fff"
+            android:textSize="50dp"
+            android:fontFamily="@font/kgshakeitoffchunky"
+            android:layout_marginLeft="26dp"
+            >
+
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@+id/imm"
+        android:id="@+id/usernameheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/ttn_norms_bold"
+        android:text="Enter username"
+        android:layout_marginLeft="19dp"
+        android:textColor="#000"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/firstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/background_border"
+        android:layout_below="@+id/usernameheading"
+        >
+
+
+        <EditText
+            android:id="@+id/usernametext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="19dp"
+            android:ems="10"
+            android:hint="username"
+            android:inputType="text"
+            android:textSize="16dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:background="@android:color/transparent"/>
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/passwordheading"
+        android:layout_below="@+id/firstlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/ttn_norms_bold"
+        android:text="Enter Password"
+        android:layout_marginLeft="19dp"
+        android:textColor="#000"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/secondlayout"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/background_border"
+        android:layout_below="@+id/passwordheading"
+        >
+
+
+        <EditText
+            android:id="@+id/passwordtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="19dp"
+            android:ems="10"
+            android:hint="********"
+            android:inputType="textPassword"
+            android:textSize="16dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:background="@android:color/transparent"/>
+
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/confpasswordheading"
+        android:layout_below="@+id/secondlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/ttn_norms_bold"
+        android:text="Confirm Password"
+        android:layout_marginLeft="19dp"
+        android:textColor="#000"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/background_border"
+        android:layout_below="@+id/confpasswordheading"
+        >
+
+
+        <EditText
+            android:id="@+id/Confirmpasswordtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="19dp"
+            android:ems="10"
+            android:hint="********"
+            android:inputType="textPassword"
+            android:textSize="16dp"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:background="@android:color/transparent"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/createnewaccount"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="29dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        >
+        <TextView
+            android:id="@+id/verifycode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Create Account"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:background="@drawable/conitnue_button"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            >
+
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

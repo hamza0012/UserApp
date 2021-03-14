@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/notification"
+            android:title="Notification" />
+        <item
+            android:id="@+id/paymentmeothod"
+            android:title="Credit and payment Method" />
+
+
+        <item
+            android:id="@+id/taskhistory"
+            android:title="Task History" />
+
+        <item
+            android:id="@+id/registercomplain"
+            android:title="Register Complain" />
+        <item
+            android:id="@+id/editprofile"
+            android:title="Edit Profile" />
+
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/logout"
+            android:title="Logout" />
+    </group>
+</menu>
