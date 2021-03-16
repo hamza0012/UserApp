@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:text="Login"
+            android:text="Loginn"
             android:textColor="#fff"
             android:textSize="50dp"
             android:fontFamily="@font/kgshakeitoffchunky"
